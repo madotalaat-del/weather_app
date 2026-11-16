@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: skyline-weather
+    runtime: docker
+    plan: free
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
